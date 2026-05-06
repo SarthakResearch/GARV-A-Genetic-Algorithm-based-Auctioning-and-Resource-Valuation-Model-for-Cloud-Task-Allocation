@@ -6,8 +6,8 @@ Efficient allocation of computational tasks to heterogeneous cloud resources und
 
 This repository provides the complete Java implementation and synthetically generated datasets associated with the following paper:
 
-> \*\*"A Genetic Algorithm-based Auctioning and Resource Valuation Model for Multi-Constrained Task Allocation in Heterogeneous Cloud Computing Environments"\*\*
-> Submitted to \[Computers and Electrical Engineering Journal]
+> \\\*\\\*"A Genetic Algorithm-based Auctioning and Resource Valuation Model for Multi-Constrained Task Allocation in Heterogeneous Cloud Computing Environments"\\\*\\\*
+> Submitted to \\\[Computers and Electrical Engineering Journal]
 
 GARV integrates a multi-attributed double auction framework with a preference-aware Genetic Algorithm for winner determination and a performance and preference-aware pricing model that jointly ensures incentive compatibility, compensation-based fairness, individual rationality, and budget balance.
 
@@ -207,9 +207,10 @@ The VM dataset remains fixed at `VmDataset100.csv` across all auction rounds or 
 \---
 
 ==========================================
+
 ```
 
-\---
+\\---
 
 ## Handling Three Allocation Scenarios
 
@@ -223,7 +224,7 @@ The implementation automatically handles three distinct operational scenarios ba
 
 This is handled automatically through `allocSize = Math.min(tasks.size(), vms.size())` in `GeneticAlgorithm.java` — no manual configuration is required.
 
-\---
+\\---
 
 ## Pricing Model Cases
 
@@ -236,13 +237,12 @@ The `Execution.java` implements the following four pricing cases:
 |Case 3|Budget priority (C), budget met, deadline exceeded|(exCost + bi)/2|Surplus/2|Surplus/2|
 |Case 4|Preferred constraint violated|Task discarded|None|None|
 
-\---
+\\---
 
 ## Reproducibility
 
-All experimental results reported in the associated paper are fully reproducible using the datasets and source code provided in this repository. For GARV results, since the GA is stochastic, each auction round should be executed 20 independent times and the mean values recorded, as described in the paper.
-
-\---
+All experimental results reported in the associated paper are fully reproducible using the datasets and source code provided in this repository. 
+\\---
 
 ## License
 
@@ -250,9 +250,10 @@ This repository is made available for academic and research purposes.
 All rights reserved by the authors.
 For any usage beyond academic research, please contact the authors.
 
-\---
+\\---
 
 ## Contact
 
-For questions regarding the implementation or datasets, please open an issue in this repository or contact the corresponding author at \[sarthak@bhu.ac.in].
+For questions regarding the implementation or datasets, please open an issue in this repository or contact the author at \\\[sarthak@bhu.ac.in].
+
 
